@@ -24,6 +24,9 @@ class Printer():
                 self.priority.append(self.priority.pop(0))
 
 
-print1 = Printer(6,0,[1,1,9,1,1,1])
+num1 = int(input("작업 수를 입력해주세요 :"))
+num2 = int(input("작업 번호를 입력해주세요 : "))
+prior1 = list(map(int,input("작업 우선순위를 입력해주세요 :").split()))
+print1 = Printer(num1,num2,prior1)
 print1.printing()
 print(print1)
